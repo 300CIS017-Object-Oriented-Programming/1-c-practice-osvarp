@@ -5,14 +5,14 @@
 
 ### Primera parte:
 Realizar los siguientes ejercicios en HackerRank y subir el código de cada uno al repositorio (siguiendo los pasos vistos en la clase anterior para realizar una gestión apropiada del repositorio):
-- Input and Output.
-- Conditional Statements.
-- Foor Loop.
-- Functions.
-- Arrays Introduction.
-- Strings.
-- Class.
-- Classes and Objects.
+- Input and Output. | listo
+- Conditional Statements. | listo
+- Foor Loop.  | listo
+- Functions.  | Listo
+- Arrays Introduction.   |  listo 
+- Strings.    |   listo
+- Class.    |  listo
+- Classes and Objects.  | listo
 
 ### Segunda parte:
 - Escoger una pareja.

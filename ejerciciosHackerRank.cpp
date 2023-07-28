@@ -138,10 +138,26 @@ void strings(){
 class
 ¨*/
 
+#include <list>
+
 class Student{
 private:
 	std::string first_name, last_name;
 	int age, standard;
+
+	static std::string intToStr( int num ){
+		std::list<int> tmp;
+		while ( num != 0 ){
+			tmp.push_front( num % 10 );
+			num /= 10;
+		}
+		std::string res;
+		for ( std::list<int>::iterator it = tmp.begin() ; it != tmp.end() ; ++it ){
+			res.push_back( *it + '0' );
+		}
+		return res;
+	}
+
 public:
 	void set_first_name( const std::string &first_name ){
 		this->first_name = first_name;
@@ -167,7 +183,36 @@ public:
 	int get_standard(){
 		return standard;
 	}
-
+	std::string to_string(){
+		std::string coma(",");
+		return intToStr( age ) + coma + first_name + coma + last_name + coma + intToStr( standard ) + std::string("\n");
+	}
 
 };
 
+
+/*
+classes and objects
+*/
+
+class Student{
+private:
+	int scores;
+public:
+	void input(){
+		int tmp;
+		std::cin >> tmp;
+		scores = tmp;
+		std::cin >> tmp;
+		scores += tmp;
+		std::cin >> tmp;
+		scores += tmp;
+		std::cin >> tmp;
+		scores += tmp;
+		std::cin >> tmp;
+		scores += tmp;
+	}
+	int calculateTotalScore(){
+		return scores;
+	}
+};
